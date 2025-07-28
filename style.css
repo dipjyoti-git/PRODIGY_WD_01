@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.head-section {
+    background-image: url("images/campnou1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.navi {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(222, 222, 4);
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navi a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navi .logo i{
+    font-size: 20px;
+    display: flex;
+    padding-top: 2px;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.navi ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navi ul li {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: poppins;
+}
+.navi ul li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.head-section .text {
+    font-family: poppins;
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 250px 300px;
+    color: rgb(146, 209, 10);
+}
+
+.head-section .text h1 {
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+    text-shadow: 10px 5px 5px black;
+}
+
+.head-section .text h1:hover{
+    text-shadow: 1px 5px 5px rgb(107, 35, 207);
+}
+
+.head-section .text p {
+    font-size: 35px;
+    font-weight: 400;
+    text-shadow: 15px 10px 8px black;
+}
+
+.leagues{
+    height: 65vh;
+    width: 100vw;
+}
+
+.leagues .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.leagues .container .more-leagues{
+    padding: 55px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 1.5em;
+}
+
+.leagues .container .boxes .box{
+    border: 2px solid black;
+    filter: drop-shadow(9px 8px 8px);
+    border-radius: 5px;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.leagues .container .boxes .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+
+.leagues .container .boxes{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 80px;
+
+}
+
+.leagues .container .boxes .box:hover  {
+    transform: scale(1.2); 
+}
+
+.foot-news{
+    height: 65vh;
+    width: 100vw;
+}
+.foot-news h2{
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    font-size: 2.2em;
+}
+
+.foot-news .container{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foot-news .container .boxes{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 80px;
+}
+.foot-news .container .boxes .box{
+    border: 2px solid black;
+    box-shadow: 10px 5px 10px;
+    border-radius: 5px;
+    height: 380px;
+    width: 300px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.5s ease;
+}
+
+.foot-news .container .boxes .box:hover{
+    transform: scale(1.2);
+}
+
+.foot-news .container .boxes .box img{
+    height: 250px;
+    width: 300px;
+    object-fit: cover;
+}
+.foot-news .container .boxes .box .heading{
+    text-align: center;
+    font-family: poppins;
+    font-weight: bolder;
+    font-weight: 600;
+}
+.foot-news .container .boxes .box p{
+    text-align: left;
+    padding: 5px;
+    font-size: 14px;
+    font-family: poppins;
+}
+.foot-news .container .boxes .box button{
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.video{
+    padding: 30px;
+    height: 65vh;
+    width: 100vw;
+}
+.video h2{
+    padding: 50px;
+    font-family: poppins;
+    font-size: 2.5em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video .container{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video .container .box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px;
+}
+
+.about{
+    height: 8vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .text{
+    color: white;
+    font-family: poppins;
+    padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .navi {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navi ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .head-section .text {
+        padding: 100px 20px;
+        text-align: center;
+    }
+
+    .head-section .text h1 {
+        font-size: 2.5em;
+    }
+
+    .head-section .text p {
+        font-size: 18px;
+    }
+
+    .leagues .container .boxes {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .foot-news .container .boxes {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .video .container .box {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .foot-news, .leagues, .video {
+        height: auto;
+    }
+
+    .foot-news .container, .leagues .container, .video .container {
+        padding: 10px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .leagues .container .boxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .foot-news .container .boxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .video .container .box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .head-section .text h1 {
+        font-size: 3.5em;
+    }
+
+    .head-section .text p {
+        font-size: 22px;
+    }
+}
+
+.leagues .container .boxes .box,
+.foot-news .container .boxes .box {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+}
+
+
+.leagues .container .boxes,
+.foot-news .container .boxes,
+.video .container .box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center; 
+}
